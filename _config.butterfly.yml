@@ -609,6 +609,7 @@ subtitle:
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
     - 人类的悲欢并不相通 我只觉得吵闹
+    - 怕你飞远去 怕你离我而去 更怕你永远停留在这里
 
 # Loading Animation (加載動畫)
 preloader: false
@@ -832,6 +833,7 @@ fragment_cache: true
 inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
+  - <meta name="referrer" content="never">
   bottom:
     # - <script src="xxxx"></script>
 
