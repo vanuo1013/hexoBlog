@@ -105,6 +105,7 @@ theme: butterfly
 deploy:
   type: git
   repository:
-    github: https://github.com/vanuo1013/hexoBlog.git
-    # coding: https://e.coding.net/vanuo/hexoBlog/hexoBlog.git
+    # github: https://github.com/vanuo1013/hexoBlog.git
+    # coding: https://e.coding.net/vanuo/hexoblog/hexoBlog.git
+    gitee: https://gitee.com/vanuo/hexoblog.git
   branch: master
