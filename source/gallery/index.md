@@ -1,8 +1,8 @@
 ---
-title: 相册集
+title: 相册
 date: 2020-04-21 18:44:23
 description:
-top_img:
+top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/sub-banner01.jpg
 ---
 
 <div class="gallery-group-main">
@@ -11,7 +11,10 @@ top_img:
 </div>
 
 <div class="gallery-group-main">
-<p class="gallery-group-title">人物</p>
-{% galleryGroup '壁紙' '收藏的一些壁紙' '/gallery/wallpaper' http://b336.photo.store.qq.com/psb?/V14QTFCg1bXlCA/6fasE6PnWw2I3dsoH3tPF*zJ.dVjPYvrvL7Oq.3Jp1I!/b/dFABAAAAAAAA&bo=OAQ4BAAAAAARBzA!&rf=viewer_4 %}
-{% galleryGroup '漫威' '關於漫威的圖片' '/gallery/marvel' https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg %}
+<p class="gallery-group-title">旅行</p>
+{% galleryGroup '盱眙 - 天泉湖' '2018-06-16' '/gallery/travel/xuyi' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_20180616_185436.jpg %}
+{% galleryGroup '江苏 - 镇江' '2016-05-01' '/gallery/travel/zhenjiang' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_4184.jpg %}
+{% galleryGroup '浙江 - 杭州' '2015-11-03</br>西湖／雷峰塔／虎跑泉／胡雪岩故居' '/gallery/travel/hangzhou' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_3845.jpg %}
+{% galleryGroup '苏州 - 寒山寺' '2014-05-07' '/gallery/travel/suzhou' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_2505.jpg %}
+{% galleryGroup '嘉兴 - 西塘镇' '2014-05-06' '/gallery/travel/xitang' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_2439.jpg %}
 </div>

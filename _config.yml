@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 一本小书
+title: 正常少女觀察所
 subtitle: ''
-description: ''
+description: '愿世间美好与你环环相扣'
 keywords:
 author: 凡诺丶
 language: zh-CN
@@ -103,4 +103,7 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository:
+    coding: https://e.coding.net/vanuo/hexoBlog/hexoBlog.git
+  branch: master
