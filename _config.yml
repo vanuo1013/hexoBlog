@@ -107,5 +107,4 @@ deploy:
   repository:
     # github: https://github.com/vanuo1013/hexoBlog.git
     # coding: https://e.coding.net/vanuo/hexoblog/hexoBlog.git
-    gitee: https://gitee.com/vanuo/hexoblog.git
-  branch: gitee_pages
+    gitee: https://gitee.com/vanuo/hexoblog.git,gitee_pages
