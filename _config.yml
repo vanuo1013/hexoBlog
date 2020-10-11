@@ -9,7 +9,7 @@ description: '愿世间美好与你环环相扣'
 keywords:
 author: 凡诺丶
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'

@@ -97,7 +97,7 @@ avatar:
   effect: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/banner.jpg
+index_img:
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/banner.jpg
@@ -140,7 +140,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -664,8 +664,8 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 2020/10/10 12:00:00
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -792,7 +792,7 @@ baidu_push: false
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -833,7 +833,8 @@ fragment_cache: true
 inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
-  - <meta name="referrer" content="never">
+  # 加入以下标签可使用QQ空间相册作为图床，但会影响不蒜子统计数据
+  # - <meta name="referrer" content="never">
   bottom:
     # - <script src="xxxx"></script>
 
