@@ -1681,6 +1681,12 @@ img:not([src]) {
   display: block !important;
   height: auto !important;
 }
+@media screen and (max-width: 800px) {
+  #aside_content .card-widget:not(:last-child) {
+    display: none;
+    font-size: 13px;
+  }
+}
 figure.highlight table::-webkit-scrollbar-thumb {
   background: #dce4eb;
 }
