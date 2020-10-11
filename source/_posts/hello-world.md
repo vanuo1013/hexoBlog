@@ -1,7 +1,6 @@
 ---
 title: Hello World
 tags:
-  - 总结
   - blog
 categories:
   - blog

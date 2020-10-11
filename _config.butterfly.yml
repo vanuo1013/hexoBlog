@@ -16,8 +16,8 @@ menu:
   #   - Movie || /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   相册: /gallery/ || far fa-image
-  留言: /contact/ || far fa-comments
-  关于: /about/ || fas fa-heart
+  # 留言: /contact/ || far fa-comments
+  # 关于: /about/ || fas fa-heart
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -169,7 +169,7 @@ post_meta:
 
 # wordcount (字數統計)
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -180,7 +180,7 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # Post
@@ -190,7 +190,7 @@ index_post_content:
 toc:
   enable: true
   number: true
-  auto_open: true # auto open the sidebar
+  auto_open: false # auto open the sidebar
 
 post_copyright:
   enable: true
@@ -224,9 +224,9 @@ anchor: false
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 100 # When will it be shown
   position: top # position: top/bottom
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
@@ -563,18 +563,18 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
-  title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
+  title-prefix-icon: '\f21e'
+  title-prefix-icon-color: '#ff0000'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size:
   code-font-size:
-  font-family:
-  code-font-family:
+  font-family: 'sleek'
+  code-font-family: 'sleek'
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字

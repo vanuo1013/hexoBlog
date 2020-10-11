@@ -12,6 +12,7 @@ top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/sub-banner01.jpg
 
 <div class="gallery-group-main">
 <p class="gallery-group-title">旅行</p>
+{% galleryGroup '湖南 - 长沙' '2020-08-09' '/gallery/travel/changsha' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_20200808_153839_718_mh1596984595114.jpg %}
 {% galleryGroup '盱眙 - 天泉湖' '2018-06-16' '/gallery/travel/xuyi' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_20180616_185436.jpg %}
 {% galleryGroup '江苏 - 镇江' '2016-05-01' '/gallery/travel/zhenjiang' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_4184.jpg %}
 {% galleryGroup '浙江 - 杭州' '2015-11-03</br>西湖／雷峰塔／虎跑泉／胡雪岩故居' '/gallery/travel/hangzhou' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/travel/IMG_3845.jpg %}
