@@ -25,7 +25,7 @@ hide_sidebar_menu_child: false
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -36,7 +36,7 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # social settings (社交圖標設置)
@@ -189,7 +189,7 @@ index_post_content:
 # toc (目錄)
 toc:
   enable: true
-  number: true
+  number: false
   auto_open: false # auto open the sidebar
 
 post_copyright:
@@ -226,7 +226,7 @@ anchor: false
 noticeOutdate:
   enable: true
   style: flat # style: simple/flat
-  limit_day: 100 # When will it be shown
+  limit_day: 60 # When will it be shown
   position: top # position: top/bottom
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
@@ -642,7 +642,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -782,9 +782,9 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
+  bg_light: '#fe9800' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
 # Baidu Push (百度推送)
@@ -836,7 +836,7 @@ inject:
   # 加入以下标签可使用QQ空间相册作为图床，但会影响不蒜子统计数据
   # - <meta name="referrer" content="never">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script src="https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/js/toggleCardCategory.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
