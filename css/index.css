@@ -1612,6 +1612,9 @@ button {
 #aside_content .author-info__description {
   font-family: sleek;
 }
+#aside_content .author-info__name {
+  color: #fe9800;
+}
 .is-center {
   text-align: center;
 }
@@ -3527,7 +3530,7 @@ _:future,
 #nav .menus_items .menus_item {
   position: relative;
   display: inline-block;
-  padding: 0 0 0 0.7rem;
+  padding: 0 0 0 1.4rem;
 }
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: block;
@@ -3622,7 +3625,7 @@ _:future,
   position: relative;
   padding-bottom: 0.3rem;
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0,0,0,0.3);
-  font-size: 0.78em;
+  font-size: 0.76rem;
   cursor: pointer;
 }
 #mobile-sidebar #menu_mask {
@@ -3754,6 +3757,7 @@ _:future,
   text-align: center;
   line-height: 1.2rem;
   cursor: pointer;
+  border-radius: 1.2rem;
 }
 #pagination .page-number.current {
   background: #fe9800;
