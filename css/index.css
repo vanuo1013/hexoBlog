@@ -1495,7 +1495,7 @@ body {
   min-height: 100%;
   background: var(--global-bg);
   color: var(--font-color);
-  font-size: 14px;
+  font-size: 15px;
   font-family: sleek;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -1833,7 +1833,7 @@ blockquote footer cite:before {
 }
 #article-container pre,
 #article-container code {
-  font-size: 14px;
+  font-size: 15px;
   font-family: sleek !important;
 }
 #article-container code {
@@ -1864,7 +1864,7 @@ blockquote footer cite:before {
 #article-container figure.highlight figcaption,
 #article-container figure.highlight .caption {
   padding: 0.3rem 0 0.1rem 0.7rem;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1em;
 }
 #article-container figure.highlight figcaption a,
@@ -1896,7 +1896,7 @@ blockquote footer cite:before {
   height: 2.15em;
   background: #1c1c1c;
   color: rgba(238,255,255,0.8);
-  font-size: 14px;
+  font-size: 15px;
 }
 #article-container .highlight-tools.closed + table {
   display: none;
@@ -3241,7 +3241,7 @@ blockquote footer cite:before {
 }
 #page-header #site-subtitle {
   color: var(--light-grey);
-  font-size: 1.15em;
+  font-size: 1em;
 }
 @media screen and (min-width: 768px) {
   #page-header #site-subtitle {
@@ -3434,6 +3434,12 @@ _:future,
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   padding: 0 36px;
   width: 100%;
   height: 60px;
@@ -3468,6 +3474,7 @@ _:future,
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  display: none;
 }
 #nav #toggle-menu {
   display: none;
@@ -3625,8 +3632,18 @@ _:future,
   position: relative;
   padding-bottom: 0.3rem;
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0,0,0,0.3);
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  #nav {
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -o-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
 }
 #mobile-sidebar #menu_mask {
   position: fixed;
