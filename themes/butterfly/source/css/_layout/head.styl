@@ -35,7 +35,7 @@
 
   #site-subtitle
     color: var(--light-grey)
-    font-size: 1.15em
+    font-size: 1em
 
     +minWidth768()
       font-size: 1.72em
@@ -211,6 +211,7 @@ _:future,
   display: flex
   flex-wrap: wrap
   align-items: center
+  justify-content: center
   padding: 0 36px
   width: 100%
   height: 60px
@@ -230,6 +231,7 @@ _:future,
 
   #blog_name
     flex: 1
+    display: none
 
   #toggle-menu
     display: none
@@ -359,5 +361,10 @@ _:future,
     position: relative
     padding-bottom: .3rem
     text-shadow: .05rem .05rem .1rem rgba($dark-black, .3)
-    font-size: .76rem
+    font-size: .8rem
     cursor: pointer
+
+
+@media screen and (max-width: 800px)
+  #nav
+    justify-content: flex-start
