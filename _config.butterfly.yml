@@ -16,8 +16,8 @@ menu:
   #   - Movie || /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   相册: /gallery/ || fas fa-camera-retro
-  # 留言: /contact/ || far fa-comments
-  # 关于: /about/ || fas fa-heart
+  互动: /contact/ || fas fa-comment-dots
+  关于: /about/ || fas fa-heartbeat
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -62,7 +62,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
@@ -190,7 +190,7 @@ index_post_content:
 toc:
   enable: true
   number: false
-  auto_open: false # auto open the sidebar
+  auto_open: true # auto open the sidebar
 
 post_copyright:
   enable: true
@@ -460,16 +460,16 @@ yandex_site_verification:
 
 theme_color:
   enable: true
-  main: "#fe9800"
-  paginator: "#fe9800"
+  main: "#ff9c01"
+  paginator: "#ff9c01"
 #   button_hover: "#FF7242"
-#   text_selection: "#00c4b6"
+  text_selection: "#ffff00"
 #   link_color: "#99a9bf"
 #   meta_color: "#858585"
-#   hr_color: "#A4D8FA"
+  hr_color: "#ff9c01"
 #   code_foreground: "#F47466"
 #   code_background: "rgba(27, 31, 35, .05)"
-#   toc_color: "#00c4b6"
+  toc_color: "#ff9c01"
 #   blockquote_padding_color: "#49b1f5"
 #   blockquote_background_color: "#49b1f5"
 
@@ -625,9 +625,9 @@ aside:
     enable: true
     description:
     button:
-      # icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      icon: 
+      text: 了解更多
+      link: /hexoBlog/about/
   card_announcement:
     enable: true
     content: 此处编写网站公告
@@ -638,15 +638,15 @@ aside:
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
-    expand: none # none/true/false
+    expand: true # none/true/false
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
     color: true
   card_calendar:
-    enable: false
-  card_archives:
     enable: true
+  card_archives:
+    enable: false
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
@@ -761,9 +761,13 @@ note:
 # Artitalk
 # see https://artitalk.js.org/
 artitalk:
-  appId:
-  appKey:
+  appId: ELaRE5tjnRdDlbTjYVGvlWER-MdYXbMMI
+  appKey: 3NsDL2cFFWBPnam74OoBAtH1
   option:
+    color1: '#fe9800'
+    color2: '#ff7242'
+    shuoPla: 说点什么吧...
+    bgImg: 
 
 # Pjax [Beta]
 # It may contain bugs and unstable, give feedback when you find the bugs.
@@ -838,7 +842,8 @@ inject:
   # 加入以下标签可使用QQ空间相册作为图床，但会影响不蒜子统计数据
   # - <meta name="referrer" content="never">
   bottom:
-    - <script src="https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/js/toggleCardCategory.js"></script>
+    - <script src="/hexoBlog/js/calendar.js"></script>
+    - <script src="/hexoBlog/js/languages.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
