@@ -23,4 +23,5 @@ top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/sub-banner01.jpg
 
 <div class="gallery-group-main">
 <p class="gallery-group-title">游戏截图</p>
+{% galleryGroup '剑侠情缘三' '电五六合一' '/gallery/game/jx3' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/game/JX3_02.jpg %}
 </div>

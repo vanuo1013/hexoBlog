@@ -204,7 +204,26 @@ img:not([src])
   display: block !important
   height: auto !important
 
+#artitalk_main #shuoshuo_input
+  .shuoshuo_emoji_part
+    width: 33.33%
+  #switch_4
+    display: none
+  #commentNick
+    margin-left: 16px
+
 @media screen and (max-width: 800px)
   #aside_content .card-widget:not(:last-child)
-    display: none;
-    font-size: 13px;
+    display: none
+    font-size: 13px
+
+  #operare_artitalk #shuoshuo-modal.c2
+    width: 300px
+    margin-left: -150px
+
+  #artitalk_main #shuoshuo_input
+    .shuoshuo_row
+      flex-wrap: wrap
+      .shuoshuo_inputs
+        flex: 1
+        margin-bottom: 16px
