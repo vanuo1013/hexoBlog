@@ -1,6 +1,7 @@
 ---
 title: 湖南 - 长沙
 date: 2020-08-09 23:41:07
+aside: false
 comments: false
 top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/sub-banner01.jpg
 ---

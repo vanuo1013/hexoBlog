@@ -1,6 +1,7 @@
 ---
 title: 苏州 - 寒山寺
 date: 2014-05-07 15:48:15
+aside: false
 comments: false
 top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/sub-banner01.jpg
 ---
