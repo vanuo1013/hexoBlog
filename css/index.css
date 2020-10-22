@@ -4639,6 +4639,12 @@ img {
 #vcomment {
   font-size: 1.1em;
 }
+#vcomment .vwrap .vinput {
+  color: #777;
+}
+#vcomment .vcol-30 .markdown {
+  display: none;
+}
 #vcomment .vbtn {
   border: none;
   background: var(--btn-bg);
@@ -4661,9 +4667,31 @@ img {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+#vcomment .vh .vnick {
+  color: #ff9c01;
+}
+#vcomment .vh .vat {
+  color: #ff7242;
+  border: 1px solid #ff7242;
+  padding: 0.2em 1em;
+  border-radius: 0.3em;
+}
+#vcomment .vh .vcontent p {
+  color: #777;
+}
 #vcomment .vcards .vcard .vcontent.expand:before,
 #vcomment .vcards .vcard .vcontent.expand:after {
   z-index: 22;
+}
+#vcomment .vcard {
+  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#vcomment .vpower {
+  display: none;
 }
 .fireworks {
   position: fixed;
