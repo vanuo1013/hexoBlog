@@ -16,7 +16,7 @@ menu:
   #   - Movie || /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   相册: /gallery/ || fas fa-camera-retro
-  互动: /contact/ || fas fa-comment-dots
+  动态: /contact/ || fas fa-comment-dots
   关于: /about/ || fas fa-heartbeat
 
 # Hide the child menu items in mobile sidebar
@@ -319,6 +319,14 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
+  master: fd74767062372a9dff763fed47c8629d
+  friends:
+    - 639ac349fbcf59b21e4e35956a1ac6c6
+  metaPlaceholder:
+    nick: 昵称/QQ号(必填)
+    mail: 邮箱(必填)
+    link: 网址(https://)
+  tagMeta: '博主,友人,访客'
 
 # utterances
 # https://utteranc.es/
@@ -862,7 +870,7 @@ CDN:
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
   # valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
-  valine: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/js/vanuoValine.js
+  valine: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/js/vanuo-valine.js
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js

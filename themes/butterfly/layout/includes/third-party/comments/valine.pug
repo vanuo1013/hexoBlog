@@ -2,6 +2,23 @@
 if site.data.valine
   - emojiMaps = JSON.stringify(site.data.valine)
 
+script(src=url_for(theme.CDN.valine))
+script.
+  var requestSetting = function (from,set) {
+    var from = from
+    var setting = set.split(',').filter(function(item){
+    return from.indexOf(item) > -1
+    });
+    setting = setting.length == 0 ? from :setting;
+    return setting
+  }
+
+  var guestInfo = requestSetting(['nick','mail','link'],'#{ theme.valine.guest_info }')
+  var requiredFields = requestSetting(['nick','mail','link'],'#{ theme.valine.requiredFields }')
+  let friends = '#{theme.valine.friends}'.split(',')
+  let master = '#{theme.valine.master}'.split(',')
+  let tagMeta = '#{theme.valine.tagMeta || "博主,友人,访客"}'.split(',')
+
 script.
   function loadValine () {
     function initValine () {
@@ -20,6 +37,10 @@ script.
         emojiMaps: !{emojiMaps},
         enableQQ: #{theme.valine.enableQQ},
         path: window.location.pathname,
+        master: master,
+        friends: friends,
+        tagMeta: tagMeta,
+        metaPlaceholder: !{JSON.stringify(theme.valine.metaPlaceholder || {})}
       }
 
       if (!{Boolean(theme.valine.requiredFields)}) { 

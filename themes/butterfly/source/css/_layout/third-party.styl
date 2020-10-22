@@ -1,6 +1,13 @@
 #vcomment
   font-size: 1.1em
+  .vwrap
+    .vinput
+      color: #777
 
+  .vcol-30
+    .markdown
+      display: none
+  
   .vbtn
     border: none
     background: var(--btn-bg)
@@ -22,10 +29,30 @@
     &:hover
       transform: rotate(360deg)
 
+  .vh
+    .vnick
+      color: $theme-color
+    .vat
+      color: $light-orange
+      border: 1px solid $light-orange
+      padding: .2em 1em
+      border-radius: .3em
+    .vcontent p
+      color: #777
+  
   .vcards .vcard .vcontent.expand
     &:before,
     &:after
       z-index: 22
+      
+  .vcard
+    box-shadow: 0 0 6px rgba(0, 0, 0, .1)
+    padding: 20px
+    margin-bottom: 20px
+    border-radius: 10px
+
+  .vpower
+    display: none
 
 .fireworks
   position: fixed
