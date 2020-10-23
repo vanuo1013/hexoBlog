@@ -4667,7 +4667,7 @@ img {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-#vcomment .vh .vnick {
+#vcomment .vh > .vnick {
   color: #ff9c01;
 }
 #vcomment .vh .vat {
@@ -4683,7 +4683,7 @@ img {
 #vcomment .vcards .vcard .vcontent.expand:after {
   z-index: 22;
 }
-#vcomment .vcard {
+#vcomment .vcards > .vcard {
   -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.1);
   box-shadow: 0 0 6px rgba(0,0,0,0.1);
   padding: 20px;
