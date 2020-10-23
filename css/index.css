@@ -4667,7 +4667,7 @@ img {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-#vcomment .vh > .vnick {
+#vcomment .vh > .vhead .vnick {
   color: #ff9c01;
 }
 #vcomment .vh .vat {
