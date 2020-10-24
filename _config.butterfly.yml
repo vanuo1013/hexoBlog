@@ -22,6 +22,14 @@ menu:
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
 
+# 移动端底部菜单导航
+bottomside:
+  分类: /categories/ || fas fa-folder-open
+  日志: /archives/ || fas fa-archive
+  首页: / || fas fa-home
+  相册: /gallery/ || fas fa-camera-retro
+  动态: /contact/ || fas fa-comment-dots
+
 # Code Blocks (代碼相關)
 # --------------------------------------
 
@@ -505,7 +513,7 @@ background: '#030208'
 footer_bg: '#030208'
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
-rightside-bottom:
+rightside-bottom: "3rem"
 
 # Enter transitions (開啓網頁進入效果)
 enter_transitions: true

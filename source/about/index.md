@@ -32,12 +32,12 @@ aside: false
 {% checkbox yellow checked, 支持搜索本地文章内容 %}
 {% checkbox yellow checked, 支持 `valantis` 的标签外挂 %}
 {% checkbox yellow checked, 优化 `valine` 评论样式 %}
+{% checkbox yellow checked, 移动端添加底部导航栏 %}
 
 
 
 ### 待办清单
 
-{% checkbox yellow, 移动端添加底部导航栏 %}
 {% checkbox yellow, 查看大图提供图片转向功能 %}
 {% checkbox yellow, 站点缓存、关键词、 `seo` 、压缩等优化 %}
 {% checkbox yellow, 整理本博客施工过程文档 %}

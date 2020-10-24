@@ -43,6 +43,8 @@ html(lang=config.language data-theme=theme.display_mode)
 
       footer#footer(style=footer_bg)
         !=partial('includes/footer', {}, {cache:theme.fragment_cache})
+    
+    include ./bottomside.pug
 
     include ./rightside.pug
     !=partial('includes/third-party/search/index', {}, {cache:theme.fragment_cache})
