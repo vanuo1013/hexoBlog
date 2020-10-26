@@ -8,7 +8,8 @@ top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/sub-banner01.jpg
 
 <div class="gallery-group-main">
 <p class="gallery-group-title">万物生长</p>
-{% galleryGroup '青团与艾团' '柔软又温暖的你' '/gallery/cat' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/07.jpg %}
+{% galleryGroup '青团与艾团' '柔软又温暖的你' '/gallery/life/cats' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/07.jpg %}
+{% galleryGroup '那些花儿' '有幸见过它们一生一次的盛放' '/gallery/life/flowers' https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/life/IMG_1569.jpg %}
 </div>
 
 <div class="gallery-group-main">

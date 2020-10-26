@@ -15,9 +15,12 @@
 
 #footer-wrap
   position: relative
-  padding: 2rem 1rem
+  padding: 2rem 1rem 4rem
   color: var(--light-grey)
   text-align: center
+
+  +minWidth768()
+    padding-bottom: 2rem
 
   a
     color: var(--light-grey)

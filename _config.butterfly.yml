@@ -322,7 +322,7 @@ valine:
   placeholder: 留下你的QQ和邮箱、以便快速收到回复... # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail # valine comment header info (nick/mail/link)
   recordIP: true # Record reviewer IP
-  serverURLs:  # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs:  https://elare5tj.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
@@ -856,6 +856,7 @@ fragment_cache: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+  - <meta http-equiv="Cache-Control" content="max-age=10"/>
   - <link rel="stylesheet" href="/hexoBlog/css/tags.css">
   # 加入以下标签可使用QQ空间相册作为图床，但会影响不蒜子统计数据
   # - <meta name="referrer" content="never">
