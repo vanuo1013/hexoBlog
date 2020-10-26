@@ -48,12 +48,15 @@ hexo.extend.helper.register('aside_categories', function (categories, options) {
           }
 
           const parentClass = isExpand && isTopParent && child ? 'parent' : ''
-
+          const iconName = cat.name.split('|| ')[1]
+          const catName = cat.name.split('|| ')[0]
           result += `<li class="card-category-list-item ${parentClass}">`
-
+          
+          result += `<svg class="icon card-category-list-icon" aria-hidden="true"><use xlink:href="#${iconName}"></use></svg>`;
+          
           result += `<a class="card-category-list-link" href="${this.url_for(cat.path)}">`
 
-          result += `<span class="card-category-list-name">${cat.name}</span>`
+          result += `<span class="card-category-list-name">${catName}</span>`;
 
           if (showCount) {
             result += `<span class="card-category-list-count">${cat.length}</span>`

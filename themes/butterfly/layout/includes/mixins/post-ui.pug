@@ -44,7 +44,7 @@ mixin postUI(posts)
               span.article-meta__separator |
               i.fas.fa-inbox.article-meta__icon
               each item, index in article.categories.data
-                a(href=url_for(item.path)).article-meta__categories #[=item.name]
+                a(href=url_for(item.path)).article-meta__categories #[=item.name.split('|| ')[0]]
                 if (index < article.categories.data.length - 1)
                   i.fas.fa-angle-right
           if (theme.post_meta.page.tags && article.tags.data.length > 0)
