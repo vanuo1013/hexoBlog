@@ -1706,19 +1706,10 @@ img:not([src]) {
 #artitalk_main #shuoshuo_input #commentNick {
   margin-left: 16px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   #aside_content .card-widget:not(:last-child) {
     display: none;
     font-size: 13px;
-  }
-  #page-header div#scroll-down {
-    bottom: 50px;
-  }
-  div#bottomside {
-    display: block;
-  }
-  div#footer-wrap {
-    padding-bottom: 4rem;
   }
   #operare_artitalk #shuoshuo-modal.c2 {
     width: 300px;
@@ -3010,13 +3001,18 @@ blockquote footer cite:before {
   }
 }
 #bottomside {
-  display: none;
+  display: block;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: 100;
   background: rgba(0,0,0,0.8);
+}
+@media screen and (min-width: 768px) {
+  #bottomside {
+    display: none;
+  }
 }
 #bottomside .menus_items {
   height: 3rem;
@@ -3299,9 +3295,14 @@ blockquote footer cite:before {
 }
 #footer-wrap {
   position: relative;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 4rem;
   color: var(--light-grey);
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #footer-wrap {
+    padding-bottom: 2rem;
+  }
 }
 #footer-wrap a {
   color: var(--light-grey);
@@ -3386,9 +3387,14 @@ blockquote footer cite:before {
 }
 #page-header #scroll-down {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  #page-header #scroll-down {
+    bottom: 0;
+  }
 }
 #page-header #scroll-down .scroll-down-effects {
   position: relative;
@@ -3552,12 +3558,12 @@ _:future,
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   padding: 0 36px;
   width: 100%;
   height: 60px;
@@ -3574,6 +3580,16 @@ _:future,
 @media screen and (max-width: 768px) {
   #nav {
     padding: 0 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #nav {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
   }
 }
 #nav:not(.fixed) #menus {
@@ -3750,16 +3766,6 @@ _:future,
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0,0,0,0.3);
   font-size: 0.8rem;
   cursor: pointer;
-}
-@media screen and (max-width: 800px) {
-  #nav {
-    -webkit-box-pack: start;
-    -moz-box-pack: start;
-    -o-box-pack: start;
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-  }
 }
 #mobile-sidebar #menu_mask {
   position: fixed;
@@ -4966,6 +4972,11 @@ figure.gallery-group {
   border-radius: 8px;
   background: #000;
   -webkit-transform: translate3d(0, 0, 0);
+}
+@media screen and (max-width: 768px) {
+  figure.gallery-group {
+    width: calc(50% - 0.4rem);
+  }
 }
 @media screen and (max-width: 600px) {
   figure.gallery-group {
