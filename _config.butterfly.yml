@@ -863,7 +863,7 @@ inject:
   bottom:
     - <script src="/hexoBlog/js/calendar.js"></script>
     - <script src="/hexoBlog/js/languages.js"></script>
-    - <script src="http://at.alicdn.com/t/font_1935255_u2tuetoj2va.js"></script>
+    - <script src="https://at.alicdn.com/t/font_1935255_u2tuetoj2va.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
