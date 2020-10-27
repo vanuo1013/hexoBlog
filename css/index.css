@@ -2208,8 +2208,8 @@ blockquote footer cite:before {
   color: #ff9c01;
 }
 #page .category-lists .category-list .card-category-list-icon {
-  width: 1.6em;
-  height: 1.6em;
+  width: 1.5em;
+  height: 1.5em;
   vertical-align: -0.4em;
   margin-right: 0.6rem;
 }
@@ -2226,14 +2226,15 @@ blockquote footer cite:before {
 #page .category-lists ul {
   list-style: none;
   counter-reset: li;
+  margin-top: 0.4rem;
 }
 #page .category-lists ul li {
   position: relative;
-  margin: 0.8rem 0;
+  margin: 1rem 0;
   padding: 0.4rem 0.8rem;
-  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  border-radius: 5px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
 }
 #page .category-lists ul li:hover:before {
   border-color: #ff7242;
@@ -2251,6 +2252,25 @@ blockquote footer cite:before {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  position: relative;
+}
+#page .category-lists ul ul:before {
+  content: '';
+  width: 110%;
+  height: 1px;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  left: -5%;
+  right: 0;
+}
+#page .category-lists ul ul > li:nth-child(5n):after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #page .category-lists ul ul > li:nth-child(3n):after {
+    display: none;
+  }
 }
 #page .category-lists ul ul .category-list-item {
   display: -webkit-box;
@@ -2271,16 +2291,25 @@ blockquote footer cite:before {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  width: 16.66%;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  margin: 0.4rem 0;
+  width: 20%;
+  border: 0;
+  margin: 0.6rem 0 0.2rem;
   padding: 0;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   #page .category-lists ul ul .category-list-item {
     width: 33.33%;
   }
+}
+#page .category-lists ul ul .category-list-item:after {
+  content: '';
+  width: 1px;
+  height: 100px;
+  background-color: #eee;
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
 #page .category-lists ul ul .category-list-item .card-category-list-icon {
   width: 3.6em;
@@ -2312,6 +2341,21 @@ blockquote footer cite:before {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  margin-bottom: 0;
+}
+#page .category-lists ul ul .category-list-item .category-list-link .card-category-list-name {
+  font-size: 1em;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  #page .category-lists ul ul .category-list-item .category-list-link .card-category-list-name {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 768px) {
+  #page .category-lists ul ul .category-list-item .category-list-link .category-list-count {
+    font-size: 12px;
+  }
 }
 .layout_page {
   display: -webkit-box;
