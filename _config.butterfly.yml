@@ -647,7 +647,7 @@ aside:
       text: 了解更多
       link: /hexoBlog/about/
   card_announcement:
-    enable: true
+    enable: false
     content: 此处编写网站公告
   card_recent_post:
     enable: true
@@ -856,14 +856,14 @@ fragment_cache: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  - <meta http-equiv="Cache-Control" content="max-age=10"/>
+  - <meta http-equiv="Cache-Control" content="max-age=0"/>
   - <link rel="stylesheet" href="/hexoBlog/css/tags.css">
   # 加入以下标签可使用QQ空间相册作为图床，但会影响不蒜子统计数据
   # - <meta name="referrer" content="never">
   bottom:
     - <script src="/hexoBlog/js/calendar.js"></script>
     - <script src="/hexoBlog/js/languages.js"></script>
-    - <script src="http://at.alicdn.com/t/font_1935255_14dmnv2p37d.js"></script>
+    - <script src="http://at.alicdn.com/t/font_1935255_u2tuetoj2va.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work

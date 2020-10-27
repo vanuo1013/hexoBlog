@@ -3,11 +3,10 @@ title: React Native学习笔记
 abbrlink: 1263558066
 date: 2020-10-19 15:17:43
 tags:
-  - 前端
-  - 移动端
-  - React Native
+    - 💻前端
+    - 📱移动端
 categories:
-  - [编程 || iconziyuan, 移动端 || iconziyuan]
+    - [编程 || icon-biancheng, React Native || icon-react-native]
 cover: 
 description: React Native学习笔记
 ---
