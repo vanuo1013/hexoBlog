@@ -39,7 +39,7 @@
       li
         position: relative
         margin: 1rem 0
-        padding: .4rem .8rem
+        padding: .4rem
         border-top: 1px solid #eee
         border-bottom: 1px solid #eee
         overflow: hidden;
@@ -47,7 +47,10 @@
         &:hover
           &:before
             border-color: $pseudo-hover
-            
+        
+        .category-list-link
+          margin-left: .4rem
+
       ul
         display: flex;
         flex-wrap: wrap;
@@ -106,7 +109,7 @@
             display: flex
             flex-direction: column
             align-items: center
-            margin-bottom: 0
+            margin: 0
             
             .card-category-list-name
               font-size: 1em
