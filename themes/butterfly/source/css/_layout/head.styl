@@ -119,28 +119,31 @@
 
   #post-info
     position: absolute
-    bottom: 1.5rem
+    bottom: 5rem
     padding: 0 8%
     width: 100%
-    text-align: left
+    text-align: center
+
+    +maxWidth900()
+      bottom: 1.5rem
+      text-align: left
 
     +maxWidth768()
       bottom: 1.1rem
       padding: 0 1.1rem
 
 #post-info
-  #post-title
+  .post-title
+    @extend .limit-more-line
     margin-bottom: .4rem
-    font-size: 2.15em
+    font-size: 2.5em
+    font-weight: normal
+    color: var(--white)
+    line-height: 1.5
+    -webkit-line-clamp: 3
 
     +maxWidth768()
       font-size: 1.72em
-
-    .posttitle
-      @extend .limit-more-line
-      color: var(--white)
-      line-height: 1.5
-      -webkit-line-clamp: 3
 
   #post-meta
     color: var(--light-grey)
@@ -188,7 +191,7 @@
   & > #post-info
     margin-bottom: 1.5rem
 
-    .posttitle
+    .post-title
       padding-bottom: .2rem
       border-bottom: 1px solid var(--light-grey)
       color: var(--text-highlight-color)
@@ -236,12 +239,15 @@ _:future,
     opacity: 1
 
   #blog_name
-    flex: 1
-    display: none
+    position: absolute;
+    left: 1.4rem;
+
+    +minWidth768()
+      left: 2rem;
 
   #toggle-menu
     display: none
-    padding: .1rem 0 0 1rem
+    padding: .2rem 0 0 3rem
     vertical-align: top
 
     &:hover
@@ -285,6 +291,9 @@ _:future,
       position: relative
       display: inline-block
       padding: 0 0 0 1.4rem
+
+      &:first-child
+        padding: 0
 
       &:hover
         .menus_item_child
@@ -355,13 +364,18 @@ _:future,
     .menus_items
       display: none !important
 
+    #site-name span,
     #search_button span
       display: none !important
 
   #search_button
     display: inline
-    padding: 0 0 0 .3rem
+    position: absolute;
+    right: 1.4rem;
 
+    +minWidth768()
+      right: 2rem;
+      
   .site-page
     position: relative
     padding-bottom: .3rem

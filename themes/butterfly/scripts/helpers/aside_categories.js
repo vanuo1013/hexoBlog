@@ -52,10 +52,10 @@ hexo.extend.helper.register('aside_categories', function (categories, options) {
           const catName = cat.name.split('|| ')[0]
           result += `<li class="card-category-list-item ${parentClass}">`
           
+          result += `<a class="card-category-list-link" href="${this.url_for(cat.path)}">`
+          
           result += `<svg class="icon card-category-list-icon" aria-hidden="true"><use xlink:href="#${iconName}"></use></svg>`;
           
-          result += `<a class="card-category-list-link" href="${this.url_for(cat.path)}">`
-
           result += `<span class="card-category-list-name">${catName}</span>`;
 
           if (showCount) {

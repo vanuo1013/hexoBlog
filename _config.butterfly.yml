@@ -6,8 +6,10 @@
 # name || icon:
 #   name || link || icon
 
+home_page: 首页 || fas fa-home
+
 menu:
-  首页: / || fas fa-home
+  # 首页: / || fas fa-home
   分类: /categories/ || fas fa-folder-open
   日志: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
@@ -26,7 +28,7 @@ hide_sidebar_menu_child: false
 bottomside:
   分类: /categories/ || fas fa-folder-open
   日志: /archives/ || fas fa-archive
-  首页: / || fas fa-home
+  标签: /tags/ || fas fa-tags
   相册: /gallery/ || fas fa-camera-retro
   动态: /contact/ || fas fa-comment-dots
 
@@ -63,17 +65,9 @@ algolia_search:
   hits:
     per_page: 6
 
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
-    hits_stats: '${hits} results found in ${time} ms'
-
 # Local search
 local_search:
   enable: true
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
 
 # Math (數學)
 # --------------------------------------
@@ -118,7 +112,7 @@ archive_img:
 tag_img:
 
 # The banner image of tag page
-# format: 
+# format:
 #  - tag name: xxxxx
 tag_per_img:
 
@@ -127,16 +121,9 @@ tag_per_img:
 category_img:
 
 # The banner image of category page
-# format: 
+# format:
 #  - category name: xxxxx
 category_per_img:
-
-# If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
-# douban:
-#   meta: false
-#   movies_img:
-#   books_img:
-#   games_img:
 
 cover:
   # display the cover or not (是否顯示文章封面)
@@ -148,7 +135,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -198,7 +185,6 @@ index_post_content:
 toc:
   enable: true
   number: false
-  auto_open: true # auto open the sidebar
 
 post_copyright:
   enable: true
@@ -210,12 +196,12 @@ post_copyright:
 reward:
   enable: false
   QR_code:
-    - img: /img/wechat.jpg
-      link:
-      text: wechat
-    - img: /img/alipay.jpg
-      link:
-      text: alipay
+    # - img: /img/wechat.jpg
+    #   link:
+    #   text: wechat
+    # - img: /img/alipay.jpg
+    #   link:
+    #   text: alipay
 
 # Related Articles
 related_post:
@@ -327,6 +313,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
+  option:
   master: fd74767062372a9dff763fed47c8629d
   friends:
     - 639ac349fbcf59b21e4e35956a1ac6c6
@@ -356,6 +343,10 @@ facebook_comments:
   pageSize: 10 # The number of comments to show
   order_by: social # social/time/reverse_time
   lang: en_US # Language en_US/zh_CN/zh_TW and so on
+
+# Twikoo
+# https://github.com/imaegoo/twikoo
+twikoo:
 
 # Chat Services
 # --------------------------------------
@@ -637,6 +628,8 @@ preloader: false
 
 aside:
   enable: true
+  hide: false
+  button: true
   mobile: true # display on mobile
   position: left # left or right
   card_author:
@@ -689,14 +682,14 @@ runtimeshow:
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: false
-  limit: 6
+  enable: true
+  limit: 5
   avatar: true
   leancloud:
     enable: false
-    appId: # leancloud application app id
-    appKey: # leancloud application app key
-    serverURL: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+    appId: ELaRE5tjnRdDlbTjYVGvlWER-MdYXbMMI # leancloud application app id
+    appKey: 3NsDL2cFFWBPnam74OoBAtH1 # leancloud application app key
+    serverURL: https://elare5tj.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
     default_avatar: # mp/identicon/monsterid/wavatar/retro/robohash/blank
   github_issues:
     enable: false
@@ -886,6 +879,7 @@ CDN:
   disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js
   disqusjs_css: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css
   utterances: https://utteranc.es/client.js
+  twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js
 
   # share
   addtoany: https://static.addtoany.com/menu/page.js
