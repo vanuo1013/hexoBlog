@@ -2580,12 +2580,13 @@ blockquote footer cite:before {
 }
 .tag-cloud-list a {
   display: inline-block;
-  padding: 0 0.4rem;
+  padding: 0 1rem 0 0.4rem;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
+  position: relative;
 }
 .tag-cloud-list a:hover {
   color: #ff9c01 !important;
@@ -2610,7 +2611,6 @@ blockquote footer cite:before {
 }
 #aside_content {
   width: 25%;
-  padding-bottom: 2.5rem;
 }
 @media screen and (min-width: 900px) {
   #aside_content {
@@ -2657,13 +2657,6 @@ blockquote footer cite:before {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
-}
-#aside_content .card-info img:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 #aside_content .card-info .author-info__name {
   font-weight: 500;
@@ -2931,6 +2924,11 @@ blockquote footer cite:before {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
+#aside_content #card-newest-comments .thumbnail {
+  width: 3.6em;
+  height: 3.6em;
+  border-radius: 50%;
+}
 #aside_content .card-webinfo .webinfo .webinfo-item {
   display: -webkit-box;
   display: -moz-box;
@@ -2956,50 +2954,71 @@ blockquote footer cite:before {
   flex: 1;
   padding-right: 1rem;
 }
+@media screen and (min-width: 768px) {
+  #recent-posts + #aside_content {
+    padding-bottom: 2.5rem;
+  }
+}
 @media screen and (max-width: 900px) {
-  #aside_content {
-    padding-bottom: 0;
+  #card-toc {
+    position: fixed;
+    right: 45px;
+    bottom: 30px;
+    z-index: 100;
+    display: none;
+    width: 300px;
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-animation: toc-open 0.3s;
+    -moz-animation: toc-open 0.3s;
+    -o-animation: toc-open 0.3s;
+    -ms-animation: toc-open 0.3s;
+    animation: toc-open 0.3s;
   }
-  #card-toc .toc-content {
-    overflow-y: auto;
-    max-height: calc(100vh - 120px);
+  #card-toc .toc-child {
+    display: block !important;
   }
-  #card-toc .toc-content ol,
-  #card-toc .toc-content li {
-    list-style: none;
-  }
-  #card-toc .toc-content > ol {
-    padding: 0 !important;
-  }
-  #card-toc .toc-content ol {
-    margin: 0;
-    padding-left: 0.4rem;
-  }
-  #card-toc .toc-content .toc-link {
-    display: block;
-    padding-left: 0.3rem;
-    border-left: 3px solid transparent;
-    color: var(--toc-link-color);
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  #card-toc .toc-content .toc-link.active {
-    border-left-color: #cd7d00;
-    background: #ff9c01;
-    color: #fff;
-  }
-  #card-toc .toc-content:before {
-    position: absolute;
-    top: 0.6rem;
-    right: 1.2rem;
-    color: #a9a9a9;
-    content: attr(progress-percentage);
-    font-style: italic;
-    font-size: 1.2rem;
-  }
+}
+#card-toc .toc-content {
+  overflow-y: auto;
+  max-height: calc(100vh - 120px);
+}
+#card-toc .toc-content ol,
+#card-toc .toc-content li {
+  list-style: none;
+}
+#card-toc .toc-content > ol {
+  padding: 0 !important;
+}
+#card-toc .toc-content ol {
+  margin: 0;
+  padding-left: 0.4rem;
+}
+#card-toc .toc-content .toc-link {
+  display: block;
+  padding-left: 0.3rem;
+  border-left: 3px solid transparent;
+  color: var(--toc-link-color);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#card-toc .toc-content .toc-link.active {
+  background: #ff9c01;
+  color: #fff;
+}
+#card-toc .toc-content:before {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  color: #a9a9a9;
+  content: attr(progress-percentage);
+  font-size: 0.8rem;
 }
 @media screen and (min-width: 900px) {
   html.hide-aside .layout {
@@ -3534,7 +3553,7 @@ blockquote footer cite:before {
   font-size: 30px;
 }
 #page-header.not-index-bg {
-  height: 20rem;
+  height: 14rem;
 }
 @media screen and (max-width: 768px) {
   #page-header.not-index-bg {
@@ -3543,7 +3562,7 @@ blockquote footer cite:before {
 }
 #page-header #page-site-info {
   position: absolute;
-  top: 10rem;
+  top: 5rem;
   padding: 0 0.5rem;
   width: 100%;
 }
@@ -3553,14 +3572,15 @@ blockquote footer cite:before {
   }
 }
 #page-header.post-bg {
-  height: 20rem;
+  height: 14rem;
 }
 @media screen and (max-width: 768px) {
   #page-header.post-bg {
-    height: 18rem;
+    height: 14rem;
   }
 }
 #page-header.post-bg:before {
+  backdrop-filter: blur(30px);
   position: absolute;
   top: 0;
   left: 0;
@@ -3586,20 +3606,14 @@ blockquote footer cite:before {
 }
 #page-header #post-info {
   position: absolute;
-  bottom: 5rem;
+  bottom: 3rem;
   padding: 0 8%;
   width: 100%;
   text-align: center;
 }
-@media screen and (max-width: 900px) {
-  #page-header #post-info {
-    bottom: 1.5rem;
-    text-align: left;
-  }
-}
 @media screen and (max-width: 768px) {
   #page-header #post-info {
-    bottom: 1.1rem;
+    bottom: 1rem;
     padding: 0 1.1rem;
   }
 }
@@ -3627,7 +3641,7 @@ blockquote footer cite:before {
 }
 @media screen and (max-width: 768px) {
   #post-info #post-meta {
-    font-size: 90%;
+    font-size: 85%;
   }
   #post-info #post-meta > .meta-firstline,
   #post-info #post-meta > .meta-secondline {
@@ -4403,7 +4417,7 @@ _:future,
 }
 @media screen and (max-width: 600px) {
   .relatedPosts > .relatedPosts-list > div {
-    width: calc(100% - 4px);
+    width: calc(50% - 4px);
   }
 }
 .relatedPosts > .relatedPosts-list .cover {
@@ -4823,29 +4837,6 @@ mjx-container[jax='CHTML'][display='true'] {
 #article-container .aplayer ol li:before,
 #article-container .aplayer ul li:before {
   content: none;
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  #card-toc {
-    position: fixed;
-    right: 45px;
-    bottom: 30px;
-    z-index: 100;
-    display: none;
-    width: 300px;
-    -webkit-transform-origin: right bottom;
-    -moz-transform-origin: right bottom;
-    -o-transform-origin: right bottom;
-    -ms-transform-origin: right bottom;
-    transform-origin: right bottom;
-    -webkit-animation: toc-open 0.3s;
-    -moz-animation: toc-open 0.3s;
-    -o-animation: toc-open 0.3s;
-    -ms-animation: toc-open 0.3s;
-    animation: toc-open 0.3s;
-  }
-  .toc-child {
-    display: block !important;
-  }
 }
 #article-container .btn-center {
   margin: 0 0 1rem;

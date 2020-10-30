@@ -2797,3 +2797,17 @@ div.timenode:hover .meta:after {
   background: #ff5722;
   transform: scale(1);
 }
+.red-badge {
+  min-width: 1rem;
+  min-height: 1rem;
+  line-height: 1rem;
+  font-size: 0.7rem;
+  font-style: normal;
+  text-align: center;
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f56c6c;
+  color: #fff;
+}
