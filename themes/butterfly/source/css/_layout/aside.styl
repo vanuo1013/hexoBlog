@@ -1,6 +1,5 @@
 #aside_content
   width: 25%
-  padding-bottom: 2.5rem
   
   +minWidth900()
     if hexo-config('aside.position') == 'right'
@@ -39,9 +38,6 @@
       height: 100px
       border-radius: 70px
       transition: all .5s
-
-      &:hover
-        transform: rotate(360deg)
 
     .author-info
       &__name
@@ -257,6 +253,12 @@
           + .child
             display: none
 
+  #card-newest-comments
+    .thumbnail
+      width: w = 3.6em
+      height: w
+      border-radius: 50%
+
   .card-webinfo
     .webinfo
       .webinfo-item
@@ -269,60 +271,58 @@
             flex: 1
             padding-right: 1rem
 
-+maxWidth900()
-  #aside_content
-    padding-bottom: 0
++minWidth768()
+  #recent-posts + #aside_content
+    padding-bottom: 2.5rem
 
-  // toc
-  #card-toc
-    +maxWidth900()
-      position: fixed
-      right: 45px
-      bottom: 30px
-      z-index: 100
-      display: none
-      width: $toc-mobile-width
-      transform-origin: right bottom
-      animation: toc-open .3s
+// toc
+#card-toc
+  +maxWidth900()
+    position: fixed
+    right: 45px
+    bottom: 30px
+    z-index: 100
+    display: none
+    width: $toc-mobile-width
+    transform-origin: right bottom
+    animation: toc-open .3s
 
-      .toc-child
-        display: block !important
+    .toc-child
+      display: block !important
 
-    .toc-content
-      overflow-y: auto
-      max-height: calc(100vh - 120px)
+  .toc-content
+    overflow-y: auto
+    max-height: calc(100vh - 120px)
 
-      ol,
-      li
-        list-style: none
+    ol,
+    li
+      list-style: none
 
-      > ol
-        padding: 0 !important
+    > ol
+      padding: 0 !important
 
-      ol
-        margin: 0
-        padding-left: .4rem
+    ol
+      margin: 0
+      padding-left: .4rem
 
-      .toc-link
-        display: block
-        padding-left: .3rem
-        border-left: 3px solid transparent
-        color: var(--toc-link-color)
-        transition: all .2s ease-in-out
+    .toc-link
+      display: block
+      padding-left: .3rem
+      border-left: 3px solid transparent
+      color: var(--toc-link-color)
+      transition: all .2s ease-in-out
 
-        &.active
-          border-left-color: darken($theme-toc-color, 20%)
-          background: $theme-toc-color
-          color: $toc-active-color
+      &.active
+        background: $theme-toc-color
+        color: $toc-active-color
 
-      &:before
-        position: absolute
-        top: .6rem
-        right: 1.2rem
-        color: #a9a9a9
-        content: attr(progress-percentage)
-        font-style: italic
-        font-size: 1.2rem
+    &:before
+      position: absolute
+      top: 1.2rem
+      right: 1.2rem
+      color: #a9a9a9
+      content: attr(progress-percentage)
+      font-size: .8rem
 
 @keyframes toc-open
   0%
@@ -345,8 +345,6 @@
 
       > .aside_content
         display: none
-
-
 
       > div:first-child
         width: 80%

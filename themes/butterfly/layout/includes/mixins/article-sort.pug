@@ -2,7 +2,7 @@ mixin articleSort(posts)
   .article-sort
     - var year
     - posts.each(function (article) {
-      - let tempYear = date(article.date, 'YYYY')
+      - let tempYear = date(article.date, 'YYYY - MM')
       - let no_cover = article.cover === false || !theme.cover.archives_enable ? 'no-article-cover' : ''
       - let title = article.title || _p('no_title')
       if tempYear !== year

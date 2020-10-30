@@ -33,12 +33,13 @@ aside: false
 {% checkbox yellow checked, 支持 `valantis` 的标签外挂 %}
 {% checkbox yellow checked, 移动端添加底部导航栏 %}
 {% checkbox yellow checked, 改造分类页展示效果，支持svg图标 %}
+{% checkbox yellow checked, 添加最新评论模块 %}
 
 
 
 ### 待办清单
 
-{% checkbox yellow, 添加最新评论模块 %}
+{% checkbox yellow, 生成二维码海报以便分享链接 %}
 {% checkbox yellow, 支持同步语雀编写博文 %}
 {% checkbox yellow, 查看大图提供图片转向功能 %}
 {% checkbox yellow, 站点缓存、关键词、 `seo` 、压缩等优化 %}

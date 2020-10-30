@@ -238,7 +238,7 @@ addThis:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,weibo,qq
 
 # AddToAny
 # https://www.addtoany.com/
@@ -678,7 +678,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 2020/10/10 12:00:00
+  publish_date: 2020/10/12
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -686,7 +686,7 @@ newest_comments:
   limit: 5
   avatar: true
   leancloud:
-    enable: false
+    enable: true
     appId: ELaRE5tjnRdDlbTjYVGvlWER-MdYXbMMI # leancloud application app id
     appKey: 3NsDL2cFFWBPnam74OoBAtH1 # leancloud application app key
     serverURL: https://elare5tj.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)

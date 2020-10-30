@@ -29,6 +29,7 @@ hexo.extend.helper.register('cloudTags', function (options = {}) {
   const maxfontsize = options.maxfontsize
   const limit = options.limit
   const unit = options.unit || 'px'
+  const number = options.number || false
 
   let result = ''
   if (limit > 0) {
@@ -49,7 +50,11 @@ hexo.extend.helper.register('cloudTags', function (options = {}) {
     let style = `font-size: ${parseFloat(size.toFixed(2))}${unit};`
     const color = 'rgb(' + Math.floor(Math.random() * 201) + ', ' + Math.floor(Math.random() * 201) + ', ' + Math.floor(Math.random() * 201) + ')' // 0,0,0 -> 200,200,200
     style += ` color: ${color}`
-    result += `<a href="${env.url_for(tag.path)}" style="${style}">${tag.name}</a>`
+    result += `<a href="${env.url_for(tag.path)}" style="${style}">${tag.name}`
+    if (number) {
+      result += `<i class="red-badge">${tag.length}</i>`
+    }
+    result += `</a>`
   })
   return result
 })
