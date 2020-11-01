@@ -1888,7 +1888,6 @@ blockquote footer cite:before {
 .article-sort {
   margin-left: 0.5rem;
   padding-left: 1rem;
-  border-left: 2px solid #ffc467;
 }
 .article-sort-title {
   position: relative;
@@ -1951,6 +1950,7 @@ blockquote footer cite:before {
 }
 .article-sort-item:hover:before {
   border-color: #ff7242;
+  background-color: #ff7242;
 }
 .article-sort-item:before {
   position: absolute;
@@ -1959,8 +1959,22 @@ blockquote footer cite:before {
   height: 0.3rem;
   border: 0.15rem solid #ff9c01;
   border-radius: 0.3rem;
-  background: var(--card-bg);
+  background-color: #ff9c01;
   content: '';
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.article-sort-item:after {
+  content: '';
+  position: absolute;
+  left: calc(-1rem - 12px);
+  bottom: 3rem;
+  width: 2px;
+  height: 3rem;
+  background-color: #ff9c01;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1974,13 +1988,12 @@ blockquote footer cite:before {
   padding: 0;
 }
 .article-sort-item.year {
-  font-size: 1.43em;
+  font-size: 1.5em;
+  margin-left: -1.5rem;
 }
-.article-sort-item.year:hover:before {
-  border-color: #ff9c01;
-}
-.article-sort-item.year:before {
-  border-color: #ff7242;
+.article-sort-item.year:before,
+.article-sort-item.year:after {
+  display: none;
 }
 .article-sort-item-time {
   color: #858585;
@@ -1993,6 +2006,7 @@ blockquote footer cite:before {
 .article-sort-item-title {
   color: var(--font-color);
   font-size: 1.1em;
+  line-height: 1.6em;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2039,6 +2053,9 @@ blockquote footer cite:before {
   -ms-flex: 1;
   flex: 1;
   padding: 0 0.8rem;
+}
+.article-sort .year + .article-sort-item:after {
+  height: 2rem;
 }
 #page .category-lists .category-title {
   font-size: 2em;
@@ -2232,7 +2249,7 @@ blockquote footer cite:before {
 }
 @media screen and (max-width: 768px) {
   .layout {
-    padding: 1rem 5px !important;
+    padding: 10px !important;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -3557,7 +3574,7 @@ blockquote footer cite:before {
 }
 @media screen and (max-width: 768px) {
   #page-header.not-index-bg {
-    height: 14rem;
+    height: 10rem;
   }
 }
 #page-header #page-site-info {
@@ -3568,7 +3585,7 @@ blockquote footer cite:before {
 }
 @media screen and (max-width: 768px) {
   #page-header #page-site-info {
-    top: 7rem;
+    top: 5rem;
   }
 }
 #page-header.post-bg {
@@ -3777,7 +3794,7 @@ _:future,
   position: fixed;
   top: -60px;
   z-index: 91;
-  background: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
   -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -moz-transition: -moz-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -o-transition: -o-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -3925,6 +3942,9 @@ _:future,
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0,0,0,0.3);
   font-size: 0.8rem;
   cursor: pointer;
+}
+.not-index-bg #nav {
+  background-color: rgba(0,0,0,0.6);
 }
 #pagination {
   overflow: hidden;
@@ -4713,6 +4733,12 @@ _:future,
 }
 #vcomment {
   font-size: 1.1em;
+}
+#vcomment .vwrap .vinput {
+  color: #777;
+}
+#vcomment .vcol-30 .markdown {
+  display: none;
 }
 #vcomment .vbtn {
   border: none;
