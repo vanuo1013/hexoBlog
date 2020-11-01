@@ -6,7 +6,7 @@ tags:
     - 💻前端
     - 📱移动端
 categories:
-    - [编程 || icon-biancheng, React Native || icon-react-native]
+    - [编程 || icon-biancheng, React || icon-react]
 cover: 
 description: React Native学习笔记
 ---

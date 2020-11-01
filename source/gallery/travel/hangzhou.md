@@ -3,7 +3,7 @@ title: 浙江 - 杭州
 date: 2015-11-03 21:04:42
 aside: false
 comments: false
-top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/sub-banner01.jpg
+top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg@1.0.3/img/top-img-05.jpg
 ---
 
 {% gallery %}

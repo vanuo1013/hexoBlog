@@ -1,7 +1,6 @@
 .article-sort
   margin-left: .5rem
   padding-left: 1rem
-  border-left: 2px solid lighten($light-blue, 20)
 
   &-title
     position: relative
@@ -48,6 +47,7 @@
     &:hover
       &:before
         border-color: $pseudo-hover
+        background-color: $pseudo-hover
 
     &:before
       $w = .3rem
@@ -57,8 +57,18 @@
       height: h = w
       border: .5 * w solid $light-blue
       border-radius: w
-      background: var(--card-bg)
+      background-color: $light-blue
       content: ''
+      transition: all .2s ease-in-out
+
+    &:after
+      content: ''
+      position: absolute
+      left: calc(-1rem - 12px)
+      bottom: 3rem
+      width: 2px
+      height: 3rem
+      background-color: $light-blue
       transition: all .2s ease-in-out
 
     &.no-article-cover
@@ -68,14 +78,11 @@
         padding: 0
 
     &.year
-      font-size: 1.43em
+      font-size: 1.5em
+      margin-left: -1.5rem
 
-      &:hover
-        &:before
-          border-color: $light-blue
-
-      &:before
-        border-color: $pseudo-hover
+      &:before, &:after
+        display: none
 
     &-time
       color: $theme-meta-color
@@ -89,6 +96,7 @@
       @extend .limit-more-line
       color: var(--font-color)
       font-size: 1.1em
+      line-height: 1.6em
       transition: all .3s
       -webkit-line-clamp: 2
 
@@ -113,3 +121,7 @@
     &-info
       flex: 1
       padding: 0 .8rem
+
+  .year + .article-sort-item
+    &:after
+      height: 2rem

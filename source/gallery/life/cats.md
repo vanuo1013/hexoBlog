@@ -3,7 +3,7 @@ title: 青团与艾团
 date: 2020-04-21 18:44:23
 aside: false
 comments: false
-top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg/img/sub-banner01.jpg
+top_img: https://cdn.jsdelivr.net/gh/vanuo1013/cloudImg@1.0.3/img/top-img-05.jpg
 ---
 
 {% gallery %}

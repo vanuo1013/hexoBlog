@@ -44,5 +44,15 @@ header#page-header(class=isHomeClass style=bg_img)
       #scroll-down
         i.fas.fa-angle-down.scroll-down-effects
     else
-      #page-site-info
-        h1#site-title=site_title.split('|| ')[0]
+      if (site_title.split('|| ')[0] == '分类')
+        #page-site-info
+          h1#site-title=`${site_title} - ${site.categories.length}`
+      else if (site_title.split('|| ')[0] == '标签')
+        #page-site-info
+          h1#site-title=`${site_title} - ${site.tags.length}`
+      else if (site_title.split('|| ')[0] == '日志')
+        #page-site-info
+          h1#site-title=`${site_title} - ${site.posts.length}`
+      else
+        #page-site-info
+          h1#site-title=site_title.split('|| ')[0]
