@@ -1350,7 +1350,7 @@ details[open] > div.content {
   margin-top: 0;
 }
 /*note标签*/
-div.note {
+/*div.note {
   position: relative;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1530,7 +1530,7 @@ div.note.blue {
 }
 div.note.blue::before {
   color: #2196f3;
-}
+}*/
 /*note标签结束*/
 /*文字标签*/
 p.p.subtitle {
